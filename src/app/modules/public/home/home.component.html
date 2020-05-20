@@ -1,29 +1,29 @@
 <div class="body">
 
-    <div class="container p-2 div-on">
+    <div class="container p-2 div-on mostrar">
         <div class="row">
             <div class="col-md-6">
                 <!-- <img src="../../../../assets/logo.jpeg" alt="logo"> -->
             </div>
             <div class="col-md-1 d-flex justify-content-center">
-                <a class="bold-font sz-10 cp">SERVIÇOS</a>
+                <a class="bold-font sz-10 cp" (click)="navigateTo('jobs')">TRABALHOS</a>
             </div>
             <div class="col-md-1 d-flex justify-content-center">
-                <a class="bold-font sz-10 cp">PRODUTOS</a>
+                <a class="bold-font sz-10 cp" (click)="navigateTo('group')">TIME</a>
             </div>
             <div class="col-md-1 d-flex justify-content-center">
-                <a class="bold-font sz-10 cp">NOVIDADES</a>
+                <a class="bold-font sz-10 cp" (click)="navigateTo('services')">SERVIÇOS</a>
             </div>
             <div class="col-md-1 d-flex justify-content-center">
-                <a class="bold-font sz-10 cp">CONTATO</a>
+                <a class="bold-font sz-10 cp" (click)="navigateTo('about')">SOBRE</a>
             </div>
             <div class="col-md-1 d-flex justify-content-center">
-                <a class="bold-font sz-10 cp">SOBRE</a>
+                <a class="bold-font sz-10 cp" (click)="navigateTo('contact')">CONTATO</a>
             </div>
         </div>
     </div>
 
-    <div id="demo" class="carousel slide div-down" data-ride="carousel">
+    <div id="demo" class="carousel slide div-down mostrar" data-ride="carousel">
 
         <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -64,26 +64,57 @@
 
     </div>
 
-    <div class="container p-5 mostrar">
 
+    <div class="container p-5 mostrar">
+        <h2 class="bold-font d-flex justify-content-center" #jobs>Trabalhos</h2>
+        <br>
         <div class="row">
-            <div class="col-md-6 d-flex justify-content-end">
-                <img src="../../../../assets/time.png" class="size-slide" alt="">
+            <div class="col-md-6 d-flex zoom justify-content-end">
+                <img src="../../../../assets/trabalho-6.jpeg" class="default-img" alt="">
             </div>
-            <div class="col-md-6 div-color p-3">
-                <h2 class="bold-font d-flex justify-content-center">Minha História</h2>
-                <br>
-                <p class="d-flex justify-content-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Explicabo, facere! Id voluptatibus repellendus itaque rerum maxime natus culpa molestias magnam, a
-                    cupiditate commodi eligendi numquam, consectetur beatae quos neque amet architecto. Adipisci
-                    laboriosam et ullam tempore aperiam est dolor laudantium, dicta beatae quae perferendis accusamus
-                    quasi labore quaerat sit dolores ut atque impedit, eum error expedita voluptatum.</p>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 zoom small-img">
+                        <img src="../../../../assets/trabalho-1.jpeg" class="job-img" alt="">
+                    </div>
+                    <div class="col-md-6 zoom small-img">
+                        <img src="../../../../assets/trabalho-2.jpeg" class="job-img" alt="">
+                    </div>
+                    <div class="col-md-6 zoom small-img">
+                        <img src="../../../../assets/trabalho-5.jpeg" class="job-img" alt="">
+                    </div>
+                    <div class="col-md-6 zoom small-img">
+                        <img src="../../../../assets/trabalho-4.jpeg" class="job-img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 zoom small-img">
+                        <img src="../../../../assets/trabalho-1.jpeg" class="job-img" alt="">
+                    </div>
+                    <div class="col-md-6 zoom small-img">
+                        <img src="../../../../assets/trabalho-2.jpeg" class="job-img" alt="">
+                    </div>
+                    <div class="col-md-6 zoom small-img">
+                        <img src="../../../../assets/trabalho-5.jpeg" class="job-img" alt="">
+                    </div>
+                    <div class="col-md-6 zoom small-img">
+                        <img src="../../../../assets/trabalho-4.jpeg" class="job-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex zoom justify-content-end">
+                <img src="../../../../assets/trabalho-6.jpeg" class="default-img" alt="">
             </div>
         </div>
     </div>
 
     <div class="container p-2 mostrar">
-        <h2 class="bold-font d-flex justify-content-center">Nosso Time</h2>
+        <h2 class="bold-font d-flex justify-content-center" #group>Nosso Time</h2>
 
         <div class="row d-flex justify-content-center">
             <div class="col-md-5 pt-3">
@@ -100,10 +131,10 @@
         </div>
     </div>
 
-    <div class="container p-2 div-on mostrar">
+    <div class="container p-2 div-on mostrar" >
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
-                <h3 class="bold-font">NOSSOS SERVIÇOS</h3>
+                <h3 class="bold-font" #services>Nossos Serviços</h3>
             </div>
         </div>
     </div>
@@ -149,28 +180,20 @@
 
     </div>
 
-    <div class="container p-5 mostrar">
-        <h2 class="bold-font d-flex justify-content-center">Trabalhos</h2>
+    <div class="container p-5 mostrar" #about>
 
         <div class="row">
             <div class="col-md-6 d-flex justify-content-end">
-                <img src="../../../../assets/trabalho-6.jpeg" class="size-slide" alt="">
+                <img src="../../../../assets/time.png" class="default-img" alt="">
             </div>
-            <div class="col-md-6 div-color">
-                <div class="row">
-                    <div class="col-md-6 div-color" style="height: 250px;">
-                        <img src="../../../../assets/trabalho-1.jpeg" class="job-img" alt="">
-                    </div>
-                    <div class="col-md-6 div-color" style="height: 250px;">
-                        <img src="../../../../assets/trabalho-2.jpeg" class="job-img" alt="">
-                    </div>
-                    <div class="col-md-6 div-color" style="height: 250px;">
-                        <img src="../../../../assets/trabalho-5.jpeg" class="job-img" alt="">
-                    </div>
-                    <div class="col-md-6 div-color" style="height: 250px;">
-                        <img src="../../../../assets/trabalho-4.jpeg" class="job-img" alt="">
-                    </div>
-                </div>
+            <div class="col-md-6 p-3">
+                <h2 class="bold-font d-flex justify-content-center">Minha História</h2>
+                <br>
+                <p class="d-flex justify-content-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Explicabo, facere! Id voluptatibus repellendus itaque rerum maxime natus culpa molestias magnam, a
+                    cupiditate commodi eligendi numquam, consectetur beatae quos neque amet architecto. Adipisci
+                    laboriosam et ullam tempore aperiam est dolor laudantium, dicta beatae quae perferendis accusamus
+                    quasi labore quaerat sit dolores ut atque impedit, eum error expedita voluptatum.</p>
             </div>
         </div>
     </div>
@@ -178,27 +201,29 @@
     <div class="footer-color p-2">
         <div class="row">
             <div class="col-md-4">
-                <p class="bold-font sz-10 cp">SERVIÇOS</p>
+                <p class="bold-font sz-10 cp" (click)="navigateTo('jobs')">TRABALHOS</p>
                 <br>
-                <p class="bold-font sz-10 cp">PRODUTOS</p>
+                <p class="bold-font sz-10 cp" (click)="navigateTo('group')">TIME</p>
                 <br>
-                <p class="bold-font sz-10 cp">NOVIDADES</p>
+                <p class="bold-font sz-10 cp" (click)="navigateTo('services')">SERVIÇOS</p>
                 <br>
-                <p class="bold-font sz-10 cp">CONTATO</p>
+                <p class="bold-font sz-10 cp" (click)="navigateTo('about')">SOBRE</p>
                 <br>
-                <p class="bold-font sz-10 cp d-flex align-items-center">SOBRE</p>
+                <p class="bold-font sz-10 cp d-flex align-items-center" (click)="navigateTo('contact')">CONTATO</p>
             </div>
             <div class="col-md-4">
-                <!-- Add font awesome icons -->
-                <p class="bold-font sz-10 cp"><a href="https://www.facebook.com/biancamyrelladesign-101237858244980/"
-                        class="fa fa-facebook"></a> FACEBOOK</p>
+                <h3 class="bold-font d-flex justify-content-start">Redes Sociais Oficiais</h3>
+                <br>
+                <p class="bold-font sz-10 cp"><a target="_blank"
+                        href="https://www.facebook.com/biancamyrelladesign-101237858244980/" class="fa fa-facebook"></a>
+                    FACEBOOK</p>
                 <br>
                 <br>
-                <p class="bold-font sz-10 cp"><a href="https://www.instagram.com/biancamyrelladesgn/"
+                <p class="bold-font sz-10 cp"><a target="_blank" href="https://www.instagram.com/biancamyrelladesgn/"
                         class="fa fa-instagram"></a> INSTAGRAM</p>
             </div>
             <div class="col-md-4">
-                <h3 class="bold-font d-flex justify-content-start">INFORMAÇÕES DE CONTATO</h3>
+                <h3 class="bold-font d-flex justify-content-start" #contact>Informações de Contato</h3>
                 <br>
                 <p class="d-flex justify-content-start">Rua das Palmas Nº169 Malvinas, CG/PB.</p>
                 <p class="d-flex justify-content-start">Tel. 839 8888-8888</p>
